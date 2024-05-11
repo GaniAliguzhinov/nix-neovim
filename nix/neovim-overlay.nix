@@ -26,6 +26,8 @@ with final.pkgs.lib; let
   #   ...
   # }
   all-plugins = with pkgs.vimPlugins; [
+    vim-startuptime  # measure startup time
+
     # plugins from nixpkgs go in here.
     # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
     nvim-treesitter.withAllGrammars
@@ -88,6 +90,7 @@ with final.pkgs.lib; let
     # language servers, etc.
     lua-language-server
     nil # nix LSP
+    zls # zig LSP
   ];
 in {
   # This is the neovim derivation
