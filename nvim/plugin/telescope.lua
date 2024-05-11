@@ -73,8 +73,8 @@ vim.keymap.set('n', '<leader>ff', function()
   builtin.find_files()
 end, { desc = '[f]ind [f]iles' })
 -- vim.keymap.set('n', '<M-p>', builtin.oldfiles, { desc = '[telescope] old files' })
--- vim.keymap.set('n', '<C-g>', builtin.live_grep, { desc = '[telescope] live grep' })
-vim.keymap.set('n', '<leader>fg', fuzzy_grep, { desc = '[f]uzzy [g]rep' })
+vim.keymap.set('n', '<leader> fg', builtin.live_grep, { desc = '[f]uzzy [g]rep' })
+-- vim.keymap.set('n', '<leader>fg', fuzzy_grep, { desc = '[f]uzzy [g]rep' })
 -- vim.keymap.set('n', '<M-f>', fuzzy_grep_current_file_type, { desc = '[telescope] fuzzy grep filetype' })
 -- vim.keymap.set('n', '<M-g>', live_grep_current_file_type, { desc = '[telescope] live grep filetype' })
 -- vim.keymap.set(
@@ -89,7 +89,7 @@ vim.keymap.set('n', '<leader>fp', project_files, { desc = '[f]ind a [p]roject fi
 -- vim.keymap.set('n', '<leader>tq', builtin.command_history, { desc = '[t]elescope command history [q]' })
 -- vim.keymap.set('n', '<leader>tl', builtin.loclist, { desc = '[t]elescope [l]oclist' })
 -- vim.keymap.set('n', '<leader>tr', builtin.registers, { desc = '[t]elescope [r]egisters' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = '[t]elescope [b]uffers [b]' })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = '[f]ind [b]uffers' })
 vim.keymap.set(
   'n',
   '<leader>fw',
