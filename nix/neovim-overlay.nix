@@ -91,6 +91,9 @@ with final.pkgs.lib; let
     lua-language-server
     nil # nix LSP
     zls # zig LSP
+    ripgrep
+    fd
+    lazygit
   ];
 in {
   # This is the neovim derivation
