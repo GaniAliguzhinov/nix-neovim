@@ -98,6 +98,8 @@ with final.pkgs.lib; let
     lazygit
 
     stylua
+    alejandra
+    deno
   ];
 in {
   # This is the neovim derivation
