@@ -12,14 +12,14 @@ require('user.options')
 require('user.diagnostics')
 
 -- Configure theme
-cmd.colorscheme("tokyonight")
+cmd.colorscheme('tokyonight')
 g.editorconfig = true
 vim.opt.colorcolumn = '100'
 
 -- Native plugins
 --[[
-    command				            detection	plugin		indent  
-    :filetype plugin indent on	    on		    on		    on
+command				            detection	plugin		indent
+:filetype plugin indent on	    on		    on		    on
 ]]
 cmd.filetype('plugin', 'indent', 'on')
 cmd.packadd('cfilter') -- Allows filtering the quickfix list with :cfdo
