@@ -86,6 +86,8 @@ with final.pkgs.lib; let
     # ^ bleeding-edge plugins from flake inputs
     which-key-nvim
     tokyonight-nvim
+
+    vim-ccls
   ];
 
   extraPackages = with pkgs; [
@@ -100,6 +102,8 @@ with final.pkgs.lib; let
     stylua
     alejandra
     deno
+
+    ccls # c++ lsp
   ];
 in {
   # This is the neovim derivation
