@@ -102,6 +102,8 @@ with final.pkgs.lib; let
     stylua
     alejandra
     deno
+    libclang
+    clang
 
     ccls # c++ lsp
   ];
